@@ -1,0 +1,25 @@
+Req: Switch pt, server, comp 1, comp 2 (connect them)
+
+server-> desktop->{ ip config -> {
+	ip add: 10.0.0.1
+	default gateway:10.0.0.2
+	DNS Server: 10.0.0.1
+}
+
+services-> DHCP -> on{
+	default gateway:10.0.0.2
+	DNS Server: 10.0.0.1
+	
+	start ip address: 10.0.0.3
+	save
+ } 
+}
+pc1-> desktop -> ip config -> DHCP
+pc2 -> desktop -> ip config -> DHCP
+
+
+transfer packet from pc 1 to pc 2
+
+pc1-> command promt--> ping 10.0.0.4
+
+transfer packet from pc 1 to server

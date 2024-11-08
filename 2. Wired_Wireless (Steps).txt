@@ -1,0 +1,29 @@
+resource: pc1, 2950-24 switch, 1941 router, 
+accesspoint pt, pc2, laptop, smart phone
+
+pc1 -> desktop -> ip address: 172.155.141.11
+		  Default gateway: 170.155.141.1
+
+check red dot between router and switch: if gig0/0
+click-> gigaethernet0/0-> ip address: 170.155.141.1
+			  subnet:.........           make port status on
+
+
+select accesspoint -> config -> port 1 -> SSID= computernetwork
+					 WEP -> on -> WEP key-> 1234567890
+
+
+
+devices: do it for all exp mobile
+
+click-> physical -> off -> remove module add wireless module (WPC)
+desktop-> PC wireless -> connect -> put WEP key
+
+ip config -> ip addrss: 172.155.141.12 (PC) && 172.155.141.13 (laptop) -> default gateway -> 172.155.141.1
+
+mobile: config -> wireless0 -> SSID= computernetwork
+	      		       WEP -> on -> WEP key-> 1234567890
+			       ip configuration -> static -> 172.155.141.14
+
+
+PC1 click and open command promt : ping 172.155.141.14 (address of mobile)

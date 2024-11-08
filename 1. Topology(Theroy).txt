@@ -1,0 +1,19 @@
+ip 198.168.0.1
+
+
+Star Topology
+
+Advantages: Easy to set up, isolate faults, and expand; failure of one node doesn’t affect others.
+Disadvantages: Single point of failure (hub); requires more cable.
+Ring Topology
+
+Advantages: Data flows in one direction, reducing collisions; simple installation.
+Disadvantages: If one device fails, the entire network can go down; slower with large networks.
+Bus Topology
+
+Advantages: Easy to install; uses less cable, so it’s cost-effective.
+Disadvantages: Limited cable length; a fault in the main cable disrupts the network.
+Mesh Topology
+
+Advantages: High reliability; multiple paths for data, so no single point of failure.
+Disadvantages: Expensive and complex to install due to high cable requirements.
